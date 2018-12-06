@@ -1,6 +1,6 @@
 //
-//  DemoCollectionUITests.swift
-//  DemoCollectionUITests
+//  AnimateDemosUITests.swift
+//  AnimateDemosUITests
 //
 //  Created by 赵一超 on 2018/12/3.
 //  Copyright © 2018年 melody. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class DemoCollectionUITests: XCTestCase {
+class AnimateDemosUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()

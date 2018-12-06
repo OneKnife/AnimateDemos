@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  DemoCollection
+//  AnimateDemos
 //
 //  Created by 赵一超 on 2018/12/3.
 //  Copyright © 2018年 melody. All rights reserved.
@@ -16,6 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let vc = ViewController.init()
+        let nav = UINavigationController.init(rootViewController: vc)
+        window = UIWindow.init(frame: UIScreen.main.bounds)
+        window?.rootViewController = nav
+        window?.makeKeyAndVisible()
         return true
     }
 
