@@ -15,5 +15,10 @@
 
 ![image](https://github.com/OneKnife/AnimateDemos/blob/master/GIF/3.gif)
 
+一个打勾的按钮动画
+
+![image](https://github.com/OneKnife/AnimateDemos/blob/master/GIF/4.gif)
+
+
 
 后续还会慢慢添加。。
