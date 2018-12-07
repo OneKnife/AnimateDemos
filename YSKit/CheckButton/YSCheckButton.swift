@@ -87,6 +87,7 @@ class YSCheckButton: UIControl, CAAnimationDelegate {
         }
     }
     
+    /// 圆圈动画
     private func startCircleAnimation(fromValue: CGFloat, andEnd endValue: CGFloat) -> CABasicAnimation {
         let animationCircle = CABasicAnimation.init(keyPath: "strokeEnd")
         animationCircle.fromValue = fromValue
@@ -98,6 +99,7 @@ class YSCheckButton: UIControl, CAAnimationDelegate {
         return animationCircle
     }
     
+    /// 对勾动画
     private func startCheckAnimation(fromValue: CGFloat, andEnd endValue: CGFloat) -> CABasicAnimation {
         let animationCheck = CABasicAnimation.init(keyPath: "strokeEnd")
         animationCheck.fromValue = fromValue
@@ -110,6 +112,7 @@ class YSCheckButton: UIControl, CAAnimationDelegate {
         return animationCheck
     }
     
+    /// 收起尾巴
     private func startCheck2Animation(fromValue: CGFloat, andEnd endValue: CGFloat) -> CABasicAnimation {
         let animationCheck = CABasicAnimation.init(keyPath: "strokeStart")
         animationCheck.fromValue = fromValue
