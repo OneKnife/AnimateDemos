@@ -49,6 +49,7 @@ class YSCheckButton: UIControl, CAAnimationDelegate {
         // 对号
         let r = self.width / 2
         
+        // 这里需要使用圆的公式计算一下对勾三个点的坐标
         let pointOrigin = CGPoint.init(x: r - r*cos(CGFloat.pi/8), y: r - r*sin(CGFloat.pi/8))
         let pointTurn = CGPoint.init(x: 2/3*r, y: 3/4*2*r)
         let pointEnd = CGPoint.init(x: 5/3*r, y: 1/3*r)
@@ -131,6 +132,7 @@ class YSCheckButton: UIControl, CAAnimationDelegate {
             if anim == layerCircle.animation(forKey: "circle") {
                 layerCircle.removeAllAnimations()
                 layerCircle.removeFromSuperlayer()
+                // 收起尾巴
                 let checkAnimate = startCheck2Animation(fromValue: 0, andEnd: 0.15)
                 layerCheck.add(checkAnimate, forKey: nil)
             }
