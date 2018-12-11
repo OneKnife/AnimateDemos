@@ -19,6 +19,14 @@
 
 ![image](https://github.com/OneKnife/AnimateDemos/blob/master/GIF/4.gif)
 
+简单的弹性动画
+
+![image](https://github.com/OneKnife/AnimateDemos/blob/master/GIF/5.gif)
+
+QQ消息粘性动画
+
+![image](https://github.com/OneKnife/AnimateDemos/blob/master/GIF/6.gif)
+
 
 
 后续还会慢慢添加。。
