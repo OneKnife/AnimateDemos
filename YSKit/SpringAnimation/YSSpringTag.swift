@@ -12,7 +12,7 @@ class YSSpringTag: UIView {
     
     
     /// 气泡粘性系数，越大可以拉的越长
-    var viscosity: CGFloat = 20
+    var viscosity: CGFloat = 15
     
     /// 起始点
     private var identityPoint: CGPoint
