@@ -34,6 +34,7 @@ class ViewController: UITableViewController {
         section1.addRow(row: YSRow.init(title: "水波动画", className: "YSWaveCurveController"))
         section1.addRow(row: YSRow.init(title: "Check按钮动画", className: "YSCheckButtonController"))
         section1.addRow(row: YSRow.init(title: "弹性动画", className: "YSSpringAnimationController"))
+        section1.addRow(row: YSRow.init(title: "QQ消息粘粘效果", className: "YSSpringTagController"))
 
         sections.append(section1)
     }

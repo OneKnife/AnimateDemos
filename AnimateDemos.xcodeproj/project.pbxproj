@@ -10,11 +10,13 @@
 		16066DDF21BA707400A201C5 /* YSWaveText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16066DDD21BA707400A201C5 /* YSWaveText.swift */; };
 		16066DE021BA707400A201C5 /* YSWaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16066DDE21BA707400A201C5 /* YSWaveView.swift */; };
 		162FB29F21B619C200CCC593 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162FB29E21B619C200CCC593 /* UIView.swift */; };
+		163062BB21BF9F4D003CC2C9 /* YSSpringAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163062BA21BF9F4D003CC2C9 /* YSSpringAnimationController.swift */; };
 		16326B3821B7ADED002D35B1 /* YSWaveCurveController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16326B3721B7ADED002D35B1 /* YSWaveCurveController.swift */; };
 		1632E62221B93762005884B2 /* YSCheckButtonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1632E62121B93762005884B2 /* YSCheckButtonController.swift */; };
 		1632E62421B93798005884B2 /* YSCheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1632E62321B93798005884B2 /* YSCheckButton.swift */; };
-		165401B721BE15CD00D46983 /* YSSpringAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165401B621BE15CD00D46983 /* YSSpringAnimationController.swift */; };
+		165401B721BE15CD00D46983 /* YSTagAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165401B621BE15CD00D46983 /* YSTagAnimationController.swift */; };
 		165401B921BE166200D46983 /* YSSpringBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165401B821BE166200D46983 /* YSSpringBall.swift */; };
+		165401BD21BE691100D46983 /* YSSpringTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165401BC21BE691100D46983 /* YSSpringTag.swift */; };
 		165B8B3721B51A3500FE97EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165B8B3621B51A3500FE97EA /* AppDelegate.swift */; };
 		165B8B3921B51A3500FE97EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165B8B3821B51A3500FE97EA /* ViewController.swift */; };
 		165B8B3E21B51A3600FE97EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 165B8B3D21B51A3600FE97EA /* Assets.xcassets */; };
@@ -46,12 +48,14 @@
 		16066DDD21BA707400A201C5 /* YSWaveText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSWaveText.swift; sourceTree = "<group>"; };
 		16066DDE21BA707400A201C5 /* YSWaveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSWaveView.swift; sourceTree = "<group>"; };
 		162FB29E21B619C200CCC593 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		163062BA21BF9F4D003CC2C9 /* YSSpringAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSSpringAnimationController.swift; sourceTree = "<group>"; };
 		16326B2E21B76B96002D35B1 /* AnimateDemos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AnimateDemos-Bridging-Header.h"; sourceTree = "<group>"; };
 		16326B3721B7ADED002D35B1 /* YSWaveCurveController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSWaveCurveController.swift; sourceTree = "<group>"; };
 		1632E62121B93762005884B2 /* YSCheckButtonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YSCheckButtonController.swift; sourceTree = "<group>"; };
 		1632E62321B93798005884B2 /* YSCheckButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YSCheckButton.swift; sourceTree = "<group>"; };
-		165401B621BE15CD00D46983 /* YSSpringAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YSSpringAnimationController.swift; sourceTree = "<group>"; };
+		165401B621BE15CD00D46983 /* YSTagAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YSTagAnimationController.swift; sourceTree = "<group>"; };
 		165401B821BE166200D46983 /* YSSpringBall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YSSpringBall.swift; sourceTree = "<group>"; };
+		165401BC21BE691100D46983 /* YSSpringTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YSSpringTag.swift; sourceTree = "<group>"; };
 		165B8B3321B51A3500FE97EA /* AnimateDemos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimateDemos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		165B8B3621B51A3500FE97EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		165B8B3821B51A3500FE97EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				165401B821BE166200D46983 /* YSSpringBall.swift */,
+				165401BC21BE691100D46983 /* YSSpringTag.swift */,
 			);
 			path = SpringAnimation;
 			sourceTree = "<group>";
@@ -153,7 +158,8 @@
 		165401B521BE15A800D46983 /* SpringAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				165401B621BE15CD00D46983 /* YSSpringAnimationController.swift */,
+				163062BA21BF9F4D003CC2C9 /* YSSpringAnimationController.swift */,
+				165401B621BE15CD00D46983 /* YSTagAnimationController.swift */,
 			);
 			path = SpringAnimation;
 			sourceTree = "<group>";
@@ -368,15 +374,17 @@
 				162FB29F21B619C200CCC593 /* UIView.swift in Sources */,
 				165B8B6921B52CD800FE97EA /* YSLoading.swift in Sources */,
 				165B8B3921B51A3500FE97EA /* ViewController.swift in Sources */,
+				163062BB21BF9F4D003CC2C9 /* YSSpringAnimationController.swift in Sources */,
 				165401B921BE166200D46983 /* YSSpringBall.swift in Sources */,
 				16066DE021BA707400A201C5 /* YSWaveView.swift in Sources */,
 				165B8B3721B51A3500FE97EA /* AppDelegate.swift in Sources */,
 				1632E62421B93798005884B2 /* YSCheckButton.swift in Sources */,
 				1632E62221B93762005884B2 /* YSCheckButtonController.swift in Sources */,
 				16066DDF21BA707400A201C5 /* YSWaveText.swift in Sources */,
-				165401B721BE15CD00D46983 /* YSSpringAnimationController.swift in Sources */,
+				165401B721BE15CD00D46983 /* YSTagAnimationController.swift in Sources */,
 				165B8B6621B528AF00FE97EA /* YSLoadingAnimation.swift in Sources */,
 				16326B3821B7ADED002D35B1 /* YSWaveCurveController.swift in Sources */,
+				165401BD21BE691100D46983 /* YSSpringTag.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
