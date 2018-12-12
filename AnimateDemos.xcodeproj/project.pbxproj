@@ -14,6 +14,11 @@
 		16326B3821B7ADED002D35B1 /* YSWaveCurveController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16326B3721B7ADED002D35B1 /* YSWaveCurveController.swift */; };
 		1632E62221B93762005884B2 /* YSCheckButtonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1632E62121B93762005884B2 /* YSCheckButtonController.swift */; };
 		1632E62421B93798005884B2 /* YSCheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1632E62321B93798005884B2 /* YSCheckButton.swift */; };
+		163EC01421C0A95C00DD8775 /* explosion_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 163EC00F21C0A95C00DD8775 /* explosion_4.png */; };
+		163EC01521C0A95C00DD8775 /* explosion_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 163EC01021C0A95C00DD8775 /* explosion_3.png */; };
+		163EC01621C0A95C00DD8775 /* explosion_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 163EC01121C0A95C00DD8775 /* explosion_1.png */; };
+		163EC01721C0A95C00DD8775 /* explosion_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 163EC01221C0A95C00DD8775 /* explosion_2.png */; };
+		163EC01821C0A95C00DD8775 /* explosion_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 163EC01321C0A95C00DD8775 /* explosion_5.png */; };
 		165401B721BE15CD00D46983 /* YSTagAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165401B621BE15CD00D46983 /* YSTagAnimationController.swift */; };
 		165401B921BE166200D46983 /* YSSpringBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165401B821BE166200D46983 /* YSSpringBall.swift */; };
 		165401BD21BE691100D46983 /* YSSpringTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165401BC21BE691100D46983 /* YSSpringTag.swift */; };
@@ -53,6 +58,11 @@
 		16326B3721B7ADED002D35B1 /* YSWaveCurveController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSWaveCurveController.swift; sourceTree = "<group>"; };
 		1632E62121B93762005884B2 /* YSCheckButtonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YSCheckButtonController.swift; sourceTree = "<group>"; };
 		1632E62321B93798005884B2 /* YSCheckButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YSCheckButton.swift; sourceTree = "<group>"; };
+		163EC00F21C0A95C00DD8775 /* explosion_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = explosion_4.png; sourceTree = "<group>"; };
+		163EC01021C0A95C00DD8775 /* explosion_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = explosion_3.png; sourceTree = "<group>"; };
+		163EC01121C0A95C00DD8775 /* explosion_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = explosion_1.png; sourceTree = "<group>"; };
+		163EC01221C0A95C00DD8775 /* explosion_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = explosion_2.png; sourceTree = "<group>"; };
+		163EC01321C0A95C00DD8775 /* explosion_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = explosion_5.png; sourceTree = "<group>"; };
 		165401B621BE15CD00D46983 /* YSTagAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YSTagAnimationController.swift; sourceTree = "<group>"; };
 		165401B821BE166200D46983 /* YSSpringBall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YSSpringBall.swift; sourceTree = "<group>"; };
 		165401BC21BE691100D46983 /* YSSpringTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YSSpringTag.swift; sourceTree = "<group>"; };
@@ -146,9 +156,22 @@
 			path = CheckButton;
 			sourceTree = "<group>";
 		};
+		163EC00E21C0A94700DD8775 /* ExplosionImages */ = {
+			isa = PBXGroup;
+			children = (
+				163EC01121C0A95C00DD8775 /* explosion_1.png */,
+				163EC01221C0A95C00DD8775 /* explosion_2.png */,
+				163EC01021C0A95C00DD8775 /* explosion_3.png */,
+				163EC00F21C0A95C00DD8775 /* explosion_4.png */,
+				163EC01321C0A95C00DD8775 /* explosion_5.png */,
+			);
+			path = ExplosionImages;
+			sourceTree = "<group>";
+		};
 		165401B421BE159000D46983 /* SpringAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				163EC00E21C0A94700DD8775 /* ExplosionImages */,
 				165401B821BE166200D46983 /* YSSpringBall.swift */,
 				165401BC21BE691100D46983 /* YSSpringTag.swift */,
 			);
@@ -346,7 +369,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				165B8B4121B51A3600FE97EA /* LaunchScreen.storyboard in Resources */,
+				163EC01821C0A95C00DD8775 /* explosion_5.png in Resources */,
+				163EC01621C0A95C00DD8775 /* explosion_1.png in Resources */,
 				165B8B3E21B51A3600FE97EA /* Assets.xcassets in Resources */,
+				163EC01521C0A95C00DD8775 /* explosion_3.png in Resources */,
+				163EC01421C0A95C00DD8775 /* explosion_4.png in Resources */,
+				163EC01721C0A95C00DD8775 /* explosion_2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

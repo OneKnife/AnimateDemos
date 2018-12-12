@@ -8,7 +8,7 @@
 
 import UIKit
 
-class YSSpringTag: UIView {
+class YSSpringTag: UIView, CAAnimationDelegate {
     
     
     /// 气泡粘性系数，越大可以拉的越长
@@ -93,7 +93,7 @@ class YSSpringTag: UIView {
         tagLabel.text = text
     }
     
-    func setupUI() {
+    private func setupUI() {
         
         backView.frame = self.bounds
         backView.addCornerRadius(self.width/2)
@@ -114,7 +114,7 @@ class YSSpringTag: UIView {
         tagLabel.addGestureRecognizer(panGesture)
     }
     
-    @objc func handlePanGesture(gesture: UIPanGestureRecognizer) {
+    @objc private func handlePanGesture(gesture: UIPanGestureRecognizer) {
         tagLabel.layer.removeAllAnimations()
         // 小球跟随手指移动
         let point = gesture.location(in: gesture.view?.superview)
@@ -131,6 +131,7 @@ class YSSpringTag: UIView {
             if r1 < self.oldBackViewFrame.width / 4 {
                 backView.isHidden = true
                 tagLabel.isHidden = true
+                self.explosionAnimate()
             } else {
                 // 当拖动结束时 回弹
                 backView.isHidden = true
@@ -144,8 +145,8 @@ class YSSpringTag: UIView {
         }
     }
     
-    /// 计算图像的坐标
-    func calculatePoints() {
+    /// 计算各点的坐标
+    private func calculatePoints() {
         x1 = backView.centerX
         y1 = backView.centerY
         
@@ -175,7 +176,8 @@ class YSSpringTag: UIView {
 
     }
     
-    func updateViews() {
+    /// 更新视图
+    private func updateViews() {
         backView.bounds = CGRect.init(x: 0, y: 0, width: r1 * 2, height: r1 * 2)
         backView.center = oldBackViewCenter
         backView.layer.cornerRadius = r1
@@ -195,6 +197,39 @@ class YSSpringTag: UIView {
             self.layer.insertSublayer(shapLayer, below: tagLabel.layer)
         }else {
             shapLayer.removeFromSuperlayer()
+        }
+    }
+    
+    /// 爆炸的动画
+    private func explosionAnimate() {
+        var images: [CGImage] = []
+        for i in 1...5 {
+            if let imagePath = Bundle.main.path(forResource: "explosion_\(i)", ofType: "png") {
+                let image = UIImage.init(contentsOfFile: imagePath)
+                if let image = image?.cgImage {
+                    images.append(image)
+                }
+            }
+        }
+        
+        self.addSubview(explosionImageView)
+
+        let animation = CAKeyframeAnimation.init(keyPath: "contents")
+        animation.duration = 0.5
+        animation.delegate = self
+        animation.repeatCount = 1
+        animation.isRemovedOnCompletion = true
+        animation.values = images
+        animation.setValue("explotion", forKey: "animationType")
+        explosionImageView.frame = CGRect.init(x: 0, y: 0, width: 34, height: 34)
+        explosionImageView.center = self.tagLabel.center
+        explosionImageView.layer.add(animation, forKey: "explosion")
+    }
+    
+    func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
+        // 爆炸动画完成时移除
+        if anim.value(forKey: "animationType") as? String == "explotion" {
+            explosionImageView.removeFromSuperview()
         }
     }
     
@@ -223,12 +258,17 @@ class YSSpringTag: UIView {
     }()
 
     
-    lazy var shapLayer: CAShapeLayer = {
+    private lazy var shapLayer: CAShapeLayer = {
         let shapLayer = CAShapeLayer()
         
         return shapLayer
     }()
     
+    private lazy var explosionImageView: UIImageView = {
+        let imageView = UIImageView.init()
+        
+        return imageView
+    }()
     
     
     
