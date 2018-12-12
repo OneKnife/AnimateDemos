@@ -10,25 +10,22 @@ import UIKit
 
 class YSSpringTag: UIView, CAAnimationDelegate {
     
-    
     /// 气泡粘性系数，越大可以拉的越长
     var viscosity: CGFloat = 15
-    
-    /// 起始点
-    private var identityPoint: CGPoint
-    
-    /// 动画持续时间
-    private var duration: CFTimeInterval = 0.6
-    
-    /// 路径点数组
-    private var pointArray: [CGPoint] = []
-    
-    /// 不动点
-    private var backView = UIView()
-    
     /// 颜色
     var color: UIColor = UIColor.red
     
+    /// 起始点
+    private var identityPoint: CGPoint
+    /// 动画持续时间
+    private var duration: CFTimeInterval = 0.6
+    /// 路径点数组
+    private var pointArray: [CGPoint] = []
+    /// 不动点
+    private var backView = UIView()
+    /// 粘粘效果Path
+    private var cutePath = UIBezierPath()
+
     /// 不动圆的半径
     private var r1: CGFloat = 0
     /// 拖动圆的半径
@@ -65,11 +62,7 @@ class YSSpringTag: UIView, CAAnimationDelegate {
     private var oldBackViewFrame: CGRect = CGRect.zero
     /// 记录原始center
     private var oldBackViewCenter: CGPoint = CGPoint.zero
-//    private var initialPoint: CGPoint = CGPoint.zero
-
-    private var cutePath = UIBezierPath()
     
-
     /// frame width/height 请保持一致, 如不一致，将会取最大值
     init(color: UIColor, frame: CGRect) {
         let width = max(frame.width, frame.height)
@@ -94,7 +87,6 @@ class YSSpringTag: UIView, CAAnimationDelegate {
     }
     
     private func setupUI() {
-        
         backView.frame = self.bounds
         backView.addCornerRadius(self.width/2)
         backView.backgroundColor = self.color
@@ -104,6 +96,7 @@ class YSSpringTag: UIView, CAAnimationDelegate {
         tagLabel.addCornerRadius(self.width/2)
         tagLabel.backgroundColor = self.color
         self.addSubview(tagLabel)
+        
         oldBackViewFrame = backView.frame
         oldBackViewCenter = backView.center
         r2 = tagLabel.width / 2
@@ -116,9 +109,11 @@ class YSSpringTag: UIView, CAAnimationDelegate {
     
     @objc private func handlePanGesture(gesture: UIPanGestureRecognizer) {
         tagLabel.layer.removeAllAnimations()
+        
         // 小球跟随手指移动
         let point = gesture.location(in: gesture.view?.superview)
         gesture.view?.center = point
+        
         if gesture.state == .began {
             backView.isHidden = false
         } else if gesture.state == .changed {
