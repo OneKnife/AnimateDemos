@@ -15,6 +15,7 @@ class YSLoadingAnimation: UIViewController {
         self.view.backgroundColor = UIColor.init(red: 23/255, green: 25/255, blue: 41/255, alpha: 1)
         // Do any additional setup after loading the view.
         _ = YSLoading.show(in: self.view)
+        
     }
 
     override func didReceiveMemoryWarning() {

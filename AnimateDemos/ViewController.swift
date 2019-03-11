@@ -31,6 +31,7 @@ class ViewController: UITableViewController {
         
         var section1 = YSSection.init(title: "动画", rows: [])
         section1.addRow(row: YSRow.init(title: "加载动画", className: "YSLoadingAnimation"))
+        section1.addRow(row: YSRow.init(title: "加载动画2", className: "YSLoadingAnimation2"))
         section1.addRow(row: YSRow.init(title: "水波动画", className: "YSWaveCurveController"))
         section1.addRow(row: YSRow.init(title: "Check按钮动画", className: "YSCheckButtonController"))
         section1.addRow(row: YSRow.init(title: "弹性动画", className: "YSSpringAnimationController"))

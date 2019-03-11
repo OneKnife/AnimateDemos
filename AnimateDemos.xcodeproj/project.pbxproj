@@ -30,6 +30,8 @@
 		165B8B5721B51A3600FE97EA /* AnimateDemosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165B8B5621B51A3600FE97EA /* AnimateDemosUITests.swift */; };
 		165B8B6621B528AF00FE97EA /* YSLoadingAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165B8B6521B528AF00FE97EA /* YSLoadingAnimation.swift */; };
 		165B8B6921B52CD800FE97EA /* YSLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165B8B6821B52CD800FE97EA /* YSLoading.swift */; };
+		1685692322366443006C004B /* YSLoading2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1685692222366443006C004B /* YSLoading2.swift */; };
+		16856925223667EB006C004B /* YSLoadingAnimation2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16856924223667EB006C004B /* YSLoadingAnimation2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		165B8B5821B51A3600FE97EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		165B8B6521B528AF00FE97EA /* YSLoadingAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YSLoadingAnimation.swift; sourceTree = "<group>"; };
 		165B8B6821B52CD800FE97EA /* YSLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YSLoading.swift; sourceTree = "<group>"; };
+		1685692222366443006C004B /* YSLoading2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YSLoading2.swift; sourceTree = "<group>"; };
+		16856924223667EB006C004B /* YSLoadingAnimation2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YSLoadingAnimation2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				165B8B6821B52CD800FE97EA /* YSLoading.swift */,
+				1685692222366443006C004B /* YSLoading2.swift */,
 			);
 			path = Loading;
 			sourceTree = "<group>";
@@ -247,6 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				165B8B6521B528AF00FE97EA /* YSLoadingAnimation.swift */,
+				16856924223667EB006C004B /* YSLoadingAnimation2.swift */,
 			);
 			path = YSLoadingAnimation;
 			sourceTree = "<group>";
@@ -399,6 +405,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16856925223667EB006C004B /* YSLoadingAnimation2.swift in Sources */,
 				162FB29F21B619C200CCC593 /* UIView.swift in Sources */,
 				165B8B6921B52CD800FE97EA /* YSLoading.swift in Sources */,
 				165B8B3921B51A3500FE97EA /* ViewController.swift in Sources */,
@@ -412,6 +419,7 @@
 				165401B721BE15CD00D46983 /* YSTagAnimationController.swift in Sources */,
 				165B8B6621B528AF00FE97EA /* YSLoadingAnimation.swift in Sources */,
 				16326B3821B7ADED002D35B1 /* YSWaveCurveController.swift in Sources */,
+				1685692322366443006C004B /* YSLoading2.swift in Sources */,
 				165401BD21BE691100D46983 /* YSSpringTag.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
