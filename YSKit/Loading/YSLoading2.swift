@@ -21,14 +21,12 @@ class YSLoading2: UIView {
         loading.center = view.center
         view.addSubview(loading)
         loading.setupUI()
-        loading.startAnimation()
         return loading
     }
     
     class func hide(in view: UIView) {
         for subview in view.subviews {
             if let loadingView = subview as? YSLoading2 {
-                loadingView.stopAnimation()
                 loadingView.removeFromSuperview()
             }
         }
@@ -81,19 +79,5 @@ class YSLoading2: UIView {
         animateGroup.autoreverses = true
         animateGroup.repeatCount = HUGE
         dotLayer.add(animateGroup, forKey: "groupAnimation")
-        
-        
-//        self.layer.addSublayer(replicatorLayerX)
-        
     }
-    
-    /// 开始动画
-    func startAnimation() {
-    }
-    
-    /// 结束动画
-    func stopAnimation() {
-        
-    }
-
 }
