@@ -15,8 +15,7 @@ class YSLoading2: UIView {
     // 小球行列数
     let cols = 3;
     
-    class func show(in view: UIView) -> YSLoading2 {
-        let width: CGFloat = 80
+    class func show(in view: UIView, width: CGFloat = 60) -> YSLoading2 {
         let loading = YSLoading2.init(frame: CGRect.init(x: 0, y: 0, width: width, height: width))
         loading.center = view.center
         view.addSubview(loading)
@@ -64,16 +63,16 @@ class YSLoading2: UIView {
         
         self.layer.addSublayer(replicatorLayerY)
         
-//        let opacityAnimate = CABasicAnimation.init(keyPath: "opacity")
-//        opacityAnimate.fromValue = 0.3
-//        opacityAnimate.toValue = 0.3
+        let opacityAnimate = CABasicAnimation.init(keyPath: "opacity")
+        opacityAnimate.fromValue = 1
+        opacityAnimate.toValue = 0.3
         
         let scaleAnimate = CABasicAnimation.init(keyPath: "transform")
         scaleAnimate.fromValue = NSValue.init(caTransform3D: CATransform3DScale(CATransform3DIdentity, 1.0, 1.0, 0))
         scaleAnimate.toValue = NSValue.init(caTransform3D: CATransform3DScale(CATransform3DIdentity, 0.2, 0.2, 0.0))
         
         let animateGroup = CAAnimationGroup()
-        animateGroup.animations = [scaleAnimate]
+        animateGroup.animations = [opacityAnimate, scaleAnimate]
         animateGroup.duration = 1
         animateGroup.beginTime = 0.2
         animateGroup.autoreverses = true
