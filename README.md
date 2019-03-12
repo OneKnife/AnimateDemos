@@ -27,6 +27,8 @@ QQ消息粘性动画
 
 ![image](https://github.com/OneKnife/AnimateDemos/blob/master/GIF/6.gif)
 
+加载动画2
 
+![image](https://github.com/OneKnife/AnimateDemos/blob/master/GIF/7.gif)
 
 后续还会慢慢添加。。
